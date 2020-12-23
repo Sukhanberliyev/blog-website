@@ -54,6 +54,8 @@ app.post("/compose", (req, res) => {
 
 
 
+
+
 app.get("/posts/:postName", (req, res) => {
   const requestedTitle = _.lowerCase(req.params.postName); 
 
@@ -61,7 +63,10 @@ app.get("/posts/:postName", (req, res) => {
     const storedTitle = _.lowerCase(post.title);
 
     if (storedTitle === requestedTitle) {
-      console.log("Match Found!");
+      res.render("post", {
+        title: post.title,
+        content: post.content
+      });
     }
   })
 });
