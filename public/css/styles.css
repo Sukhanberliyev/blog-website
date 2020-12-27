@@ -1,9 +1,9 @@
 body {
-    background-color: #222831;
+    background-color: #191c22;
     color: #fff;
 }
 .container-fluid {
-    padding-top: 70px;
+    margin: 0;
     padding-bottom: 70px;
 }
 .navbar {
@@ -40,4 +40,37 @@ body {
 
 .compose {
     margin-top: 20px;
+    display: block;
 }
+.box {
+    background-color:#1a202b;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 10px 20px 10px 10px;
+    width: 350px;
+    height: 250px;
+}
+
+.button-box {
+    padding: 0%;
+    border-radius: 7px;
+}
+
+.button {
+    position: relative;
+    width:100%;
+    height:100%;   
+}
+.button1 {
+    position: relative;
+    top: 115px;
+    right: 10px;
+}
+.icon {
+    position: relative;
+    bottom: 40px;
+    left: 65px;
+    font-size: 30px;
+
+}
+  
