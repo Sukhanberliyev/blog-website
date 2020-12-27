@@ -15,7 +15,7 @@ body {
     font-size: 12px;
     letter-spacing: 5px;
 }
-.navbar-nav  li a:hover {
+.nav  li a:hover {
     color: #1abc9c !important;
 }
 
@@ -50,6 +50,7 @@ body {
     width: 350px;
     height: 250px;
 }
+
 
 .button-box {
     padding: 0%;
