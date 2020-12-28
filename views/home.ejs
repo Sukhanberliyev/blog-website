@@ -8,9 +8,9 @@
 <% posts.forEach((post) => { %>
 
     <div class="box">
-      <h4><%= post.title %></h4>
-      <p><%= post.createdAt.toLocaleDateString() %></p>
-      <p><%= post.content.substring(0, 120) + " ..." %></p>
+      <h4 class="title"><%= post.title %></h4>
+      <p class="date"><%= post.createdAt.toLocaleDateString() %></p>
+      <p class="content"><%= post.content.substring(0, 120) + " ..." %></p>
       <a class="btn btn-outline-primary compose" href="/posts/<%=post.title%>">Read More</a>
     </div>
   

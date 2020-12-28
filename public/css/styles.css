@@ -110,3 +110,10 @@ input[type=text] {
     width: 70%;
     margin-left: 70px;
 }
+
+.title {
+    color: gold;
+}
+.date {
+    color: rgb(0, 119, 255);
+}
