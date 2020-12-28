@@ -16,7 +16,7 @@ body {
     letter-spacing: 5px;
 }
 .nav  li a:hover {
-    color: #1abc9c !important;
+    color: #ffe600 !important;
 }
 .navbar-header {
     display: flex;
@@ -104,4 +104,9 @@ input[type=text] {
     margin: 10px 20px 10px 10px;
     width: 540px;
     height: 450px;
+}
+
+.aboutImage {
+    width: 70%;
+    margin-left: 70px;
 }
