@@ -72,16 +72,14 @@ body {
     height:100%;   
 }
 .button1 {
-    position: relative;
-    top: 115px;
-    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
 }
-.icon {
-    position: relative;
-    bottom: 40px;
-    left: 65px;
-    font-size: 30px;
-}
+
 input[type=text] {
     background-color: #393e46;
     color: white;
@@ -92,4 +90,7 @@ input[type=text] {
     color: white;
     border: none;
 }
-  
+.icon {
+    font-size: 90px;
+    margin-bottom: 20px;
+}
