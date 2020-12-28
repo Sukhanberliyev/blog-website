@@ -81,6 +81,15 @@ body {
     bottom: 40px;
     left: 65px;
     font-size: 30px;
-
+}
+input[type=text] {
+    background-color: #393e46;
+    color: white;
+    border: none;
+}
+.textarea {
+    background-color: #393e46;
+    color: white;
+    border: none;
 }
   
