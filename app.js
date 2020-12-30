@@ -20,7 +20,7 @@ app.use(express.static("public"));
 let posts = []; 
 
 app.get("/", (req,res) => {
-  res.render("Home", {
+  res.render("home", {
     startingContent: homeStartingContent,
     posts: posts
   });
