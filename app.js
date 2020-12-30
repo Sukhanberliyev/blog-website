@@ -1,15 +1,9 @@
 
 
 const express = require("express");
-const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require('lodash');
-
-mongoose.connect("mongodb://localhost/blog", {
-  useNewUrlParser: true, useUnifiedTopology: true
-})
-
 
 const homeStartingContent = "Create your own daily journal";
 const aboutContent = "Write, plan, & get organized in one place.";
@@ -30,7 +24,6 @@ app.get("/", (req,res) => {
     startingContent: homeStartingContent,
     posts: posts
   });
-  
   
 
 });
