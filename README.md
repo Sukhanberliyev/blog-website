@@ -1,6 +1,6 @@
 # Blog-Website
 ### Live app
-<a href="https://https://daily-blog-website.herokuapp.com/">Blog-Website</a>
+<a href="https://daily-blog-website.herokuapp.com/">Blog-Website</a>
 ### Table of contents
 * Overview
 * Main Feature
