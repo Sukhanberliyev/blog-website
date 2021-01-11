@@ -9,7 +9,6 @@
 
     <div class="box">
       <h4 class="title"><%= post.title %></h4>
-      <p class="date"><%= post.createdAt.toLocaleDateString() %></p>
       <p class="content"><%= post.content.substring(0, 120) + " ..." %></p>
       <a class="btn btn-outline-primary read" href="/posts/<%=post.title%>">Read More</a>
     </div>
