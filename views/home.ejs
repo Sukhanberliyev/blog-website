@@ -10,8 +10,15 @@
     <div class="box">
       <h4 class="title"><%= post.title %></h4>
       <p class="content"><%= post.content.substring(0, 200) + " ..." %></p>
-      <a class="btn btn-outline-primary read" href="/posts/<%=post._id%>">Read More</a>
-    </div>
+      <div class="buttons btn-toolbar">
+        <form action="/delete" method="post">
+          <button class="btn btn-outline-danger" name="deleteButton" value="<%=post._id%>">Delete</button>
+          <a class="btn btn-outline-primary read" href="/posts/<%=post._id%>">Read More</a>
+        </form>
+        
+      </div>
+      </div>
+      
   
 <% }); %>
 <% console.log(posts); %>

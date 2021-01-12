@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // -----------Mongoose-----------
-mongoose.connect("mongodb+srv://admin-aidar:Test-123@cluster0.pxpun.mongodb.net/blogwebsiteDB", {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
 
 const postSchema = {
   title: String,
@@ -65,6 +65,16 @@ const requestedPostId = req.params.postId;
     });
   });
 
+});
+
+app.post("/delete", function(req, res){
+  const deletePostId = req.body.deleteButton;
+  Post.findByIdAndRemove(deletePostId, function(err){
+    if(!err) {
+      console.log("Successfully deleted post");
+      res.redirect("/");
+    }
+  });
 });
 
 app.get("/about", function(req, res){
